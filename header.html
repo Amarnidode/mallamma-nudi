@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+
+  <div class="container">
+    
+    <!-- LOGO -->
+    <a class="navbar-brand" href="main.html">
+      <img src="Images/header image.jpg" height="50" alt="Logo">
+    </a>
+
+    <!-- RIGHT MENU -->
+    <div class="ms-auto d-flex align-items-center">
+
+      <a class="nav-link px-3" href="main.html">🏠</a>
+
+      <a class="nav-link px-3" href="about.html">About Us</a>
+
+      <a class="nav-link px-3" href="contact.html">Contact Us</a>
+
+      <a class="nav-link px-3 me-2" href="privacy.html">Privacy Policy</a>
+
+    </div>
+
+  </div>
+
+</nav>
+
+<!-- STYLE -->
+<style>
+.nav-link {
+  color: #333;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: black !important;
+}
+</style>
+
+<!-- ACTIVE LINK SCRIPT -->
+<script>
+const links = document.querySelectorAll(".nav-link");
+
+links.forEach(link => {
+  if (link.href === window.location.href) {
+    link.classList.add("active");
+  }
+});
+</script>
